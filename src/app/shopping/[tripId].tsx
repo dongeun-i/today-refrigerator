@@ -431,10 +431,9 @@ export default function TripDetailScreen() {
         onConfirm={async (value) => {
           setShowPriceModal(false);
           if (editingItem) {
-            const price = value ? parseInt(value, 10) : 0;
-            if (!isNaN(price) && price > 0) {
-              await updateItemPrice(db, editingItem.id, price);
-            }
+            const parsed = value ? parseInt(value, 10) : null;
+            const price = parsed && !isNaN(parsed) ? parsed : null;
+            await updateItemPrice(db, editingItem.id, price);
             await loadData();
           }
           setEditingItem(null);

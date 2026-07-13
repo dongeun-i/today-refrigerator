@@ -154,7 +154,7 @@ export async function updateItem(
 export async function updateItemPrice(
   db: SQLiteDatabase,
   id: string,
-  price: number
+  price: number | null
 ): Promise<void> {
   await db.runAsync(
     'UPDATE shopping_items SET price = $price WHERE id = $id',
