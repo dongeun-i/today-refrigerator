@@ -4,3 +4,6 @@ export { ChipFilter } from './ChipFilter';
 export { ProgressBar } from './ProgressBar';
 export { SearchInput } from './SearchInput';
 export { SectionHeader } from './SectionHeader';
+export { InputModal } from './InputModal';
+export { CreateTripModal } from './CreateTripModal';
+export { EditItemModal } from './EditItemModal';

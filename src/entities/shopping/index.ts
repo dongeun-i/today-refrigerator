@@ -1,0 +1,21 @@
+export {
+  getTrips,
+  getActiveTrips,
+  getCompletedTrips,
+  getTripById,
+  createTrip,
+  updateTripTitle,
+  updateTripBudget,
+  updateTripStatus,
+  updateTripSpent,
+  deleteTrip,
+  duplicateTrip,
+  getItemsByTrip,
+  getItemCountByTrip,
+  createItem,
+  updateItem,
+  toggleItem,
+  updateItemPrice,
+  deleteItem,
+} from './model/queries';
+export type { ShoppingTrip, ShoppingItem, TripStatus } from './model/types';
